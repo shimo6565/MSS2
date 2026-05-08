@@ -2,6 +2,10 @@
 
 - MSS(Membrane-type Surface Stress Sensor, 膜型表面応力センサ)の測定データを解析するために、
 LLM(Gemma3 4B)をfine-tuningしたモデルです。
+- 1. MSSデータからの分子情報の予測
+  2. 分子情報からの匂いの予測
+  3. MSSデータからの匂いの予測
+  の三つのタスクを行うことができます。
 ---
 
 ## Model
@@ -58,12 +62,12 @@ LLM(Gemma3 4B)をfine-tuningしたモデルです。
 pip install torch unsloth peft transformers datasets
 ```
 ## How to Run
-1. Prepare input data
-Prepare a text file that contains molecule concentration, receptor material, and MSS measurement data.
+1. タスクごとに必要なデータを用意する
+   MSS_TO_MOLECULE: 分子の濃度、受容体膜を覆う材料、MSSのシグナルデータ
+   MOLECULE_TO_ODOR: 分子名、SMILES、分子量など
+   MSS_TO_ODOR: 分子の濃度、受容体膜を覆う材料、MSSのシグナルデータ
 
-2. Run inference
-
-Run the following command to perform odor prediction:
+2. 学習済のアダプター、データファイルを指定して実行する
 
 ```bash
 python sample_code/gene_open.py --adapter_path ./adapter_weight \
