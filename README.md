@@ -65,11 +65,14 @@ pip install torch unsloth peft transformers datasets
 ```
 ## How to Run
 1. タスクごとに必要なデータを用意する
+
    MSS_TO_MOLECULE: 分子の濃度、受容体膜を覆う材料、MSSのシグナルデータ
+
    MOLECULE_TO_ODOR: 分子名、SMILES、分子量など
+
    MSS_TO_ODOR: 分子の濃度、受容体膜を覆う材料、MSSのシグナルデータ
 
-2. 学習済のアダプター、データファイルを指定して実行する
+3. 学習済のアダプター、データファイルを指定して実行する
 
 ```bash
 python sample_code/gene_open.py --adapter_path ./adapter_weight \
