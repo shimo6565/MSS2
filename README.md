@@ -73,6 +73,7 @@ python sample_code/gene_open.py --adapter_path ./adapter_weight \
 The --adapter_path argument specifies the directory containing the fine-tuned LoRA adapter.
 
 ##実行の様子 Task: MSS_TO_MOLECULE
+
 system　プロンプト
 ```bash
 You are an assistant that performs three types of tasks:
@@ -89,6 +90,7 @@ Follow these rules:
 - Always output ONLY the required fields for the task. - Do not include explanations. - Do not add extra text.
 ```
 user プロンプト
+
 ```bash
 Task:MSS_TO_MOLECULE {'concentration': '10%', 'receptor material': 'Z propyl STNPs: Silica-titania nanoparticles with Z propyl chains introduced on the surface', 'signal data': ['0.100', '0.200', '0.300', '0.400', '0.500', '0.600', '0.700', '0.800', '0.900', '1.000', '0.933', '0.867', '0.800', '0.733', '0.667', '0.600', '0.533', '0.467', '0.400', '0.333', '0.311', '0.289', '0.267', '0.244', '0.222', '0.200', '0.178', '0.156', '0.133', '0.111', '0.104', '0.097', '0.090', '0.083', '0.076', '0.069', '0.062', '0.055', '0.048', '0.041']}
 ```
