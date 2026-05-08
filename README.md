@@ -13,7 +13,6 @@ LLM(Gemma3 4B)をfine-tuningしたモデルです。
 
 - Gemma 3 (4B)
 - LoRAを用いたFine-tuning 
-- Trained for MSS sensor data analysis
 
 ---
 
