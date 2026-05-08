@@ -79,7 +79,6 @@ python sample_code/gene_open.py --adapter_path ./adapter_weight \
                     --data_path ./data/sample_data.txt
 
 ```
-The --adapter_path argument specifies the directory containing the fine-tuned LoRA adapter.
 
 ## 実行の様子 Task: MSS_TO_MOLECULE
 
