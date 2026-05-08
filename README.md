@@ -11,7 +11,7 @@ LLM(Gemma3 4B)をfine-tuningしたモデルです。
 
 ## Model
 
-- Gemma 3 (4B)
+- Gemma 3 (4B) https://huggingface.co/unsloth/gemma-3-4b-it-unsloth-bnb-4bitより取得
 - LoRAを用いたFine-tuning 
 
 ---
